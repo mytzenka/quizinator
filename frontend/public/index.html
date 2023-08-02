@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="css/index.css">-->
+
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  <script type="module" src="js/index.js"></script>
+
+  <title>Quizinator - Test yourself</title>
+</head>
+
+<body>
+
+  <div class="bodybox">
+
+    <div class="sidebar">
+      <header>
+        <nav class="hamburger-menu">
+          <form action="">
+            <button class="material-icons md-36">menu</button>
+          </form>
+        </nav>
+        <h1>Quizinator</h1>
+        <div class="sub-title">Test yourself</div>
+      </header>
+
+      <nav>
+        <ul class="full-menu">
+          <li id="menu-edit"><a href="">Create new<span class="material-icons menu-icon">edit</span></a></li>
+          <li id="menu-run"><a href="/run">Run test<span class="material-icons menu-icon">play_circle_filled</span></a></li>
+          <li id="menu-settings"><a href="">Settings<span class="material-icons menu-icon">settings</span></a></li>
+        </ul>
+      </nav>
+
+      <footer>
+        <p>Copyright &copy; 2021 - Mikado</p>
+      </footer>
+    </div>
+
+    <main>
+
+      <div class="quote">
+        <div class="quote-content"></div>
+        <div class="quote-author"></div>
+      </div>
+
+      <!-- Quiz type == 'Listing' -->
+      <article class="quiz quiz-listing">
+        <header class="quiz-header">
+          <h2>United States of America</h2>
+          <div>List all 50 United States of America</div>
+        </header>
+        <section class="quiz-content">
+          <div class="quiz-row">
+            <label for="state">state name</label>
+            <input type="text" name="answer-1" id="state">
+          </div>
+        </section>
+        <section class="quiz-results">
+          <h3>Correct: <span class="quiz-total-correct">0</span> out of <span class="quiz-total-answers">50</span></h3>
+          <ol class="list-order-reversed">
+          </ol>
+        </section>
+        <section class="quiz-footer">
+          <button class="quiz-restart-button">Restart</button><button class="quiz-forfeit-button">Forfeit</button>
+        </section>
+      </article>
+
+      <!-- Quiz type == 'Conjugation'
+      <article class="quiz quiz-conjugation">
+        <header class="quiz-header">
+          <h2>Spanish grammar</h2>
+          <div>Present tense conjugation of TALKING</div>
+        </header>
+        <section class="quiz-content">
+          <form action="">
+            <div class="quiz-row quiz-correct">
+              <label for="inf">infinitive</label>
+              <input type="text" name="inf" id="inf">
+            </div>
+            <div class="quiz-row quiz-incorrect">
+              <label for="conj-1">yo</label>
+              <input type="text" name="conj-1" id="conj-1">
+            </div>
+            <div class="quiz-row quiz-correct">
+              <label for="conj-2">tú</label>
+              <input type="text" name="conj-2" id="conj-2">
+            </div>
+            <div class="quiz-row">
+              <label for="conj-3">él / ella / usted</label>
+              <input type="text" name="conj-3" id="conj-3">
+            </div>
+            <div class="quiz-row">
+              <label for="conj-4">nosotros / as</label>
+              <input type="text" name="conj-4" id="conj-4">
+            </div>
+            <div class="quiz-row">
+              <label for="conj-5">vosotros</label>
+              <input type="text" name="conj-5" id="conj-5">
+            </div>
+            <div class="quiz-row">
+              <label for="conj-6">ellos / ellas / Uds.</label>
+              <input type="text" name="conj-6" id="conj-6">
+            </div>
+          </form>
+        </section>
+      </article>
+      -->
+
+    </main>
+
+  </div>
+
+</body>
+
+</html>
